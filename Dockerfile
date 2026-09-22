@@ -30,7 +30,7 @@ RUN CGO_ENABLED=0 GOOS=${TARGETOS} GOARCH=${TARGETARCH} \
 # ---------------------------------------------------------------------------
 # Runtime stage
 # ---------------------------------------------------------------------------
-FROM alpine:3.20
+FROM alpine:3.24
 
 # ca-certificates and tzdata are not needed by the tool itself, but they make
 # the image usable for shelling into when a run needs investigating.
